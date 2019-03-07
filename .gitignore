@@ -1,0 +1,25 @@
+# Java
+hs_err_pid*
+
+# built native files 
+*.o 
+*.so
+
+# Gradle files
+.gradle
+gradle-app.setting
+build/
+/*/build/
+captures/
+gradle.propierties
+
+# Log Files 
+*.log
+
+# Intellij IDEA (see https://intellij-support.jetbrains.com/entries/23393067)
+.idea
+
+# OSX 
+.DS_Store
+ .AppleDouble
+ .LSOverride
