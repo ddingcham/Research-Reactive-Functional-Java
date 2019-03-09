@@ -1,6 +1,5 @@
 rootProject.name = 'rxjava'
 
-// if new modules
-// include 'core'
-// include 'imperative_vs_declarative'
-// include 'side_effects'
+include 'imperative_vs_declarative'
+include 'core'
+

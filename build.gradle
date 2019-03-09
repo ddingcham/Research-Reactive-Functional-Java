@@ -30,6 +30,6 @@ subprojects {
     dependencies {
         compile 'io.reactivex:rxjava:1.1.5'
 
-        testCompile "junit:junit:${JUNIT_VERSION}"
+        testCompile "junit:junit:4.12"
     }
 }
