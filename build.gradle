@@ -29,6 +29,7 @@ subprojects {
 
     dependencies {
         compile 'io.reactivex:rxjava:1.1.5'
+        compile "org.projectlombok:lombok:1.16.8"
 
         testCompile "junit:junit:4.12"
     }
