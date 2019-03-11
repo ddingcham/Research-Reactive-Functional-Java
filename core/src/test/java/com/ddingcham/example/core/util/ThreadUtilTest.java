@@ -14,7 +14,7 @@ public class ThreadUtilTest {
         sleep(5000, 10000, (min, max) -> 0);
     }
 
-    @Test(timeout = 430)
+    @Test(timeout = 460)
     public void sleepWithRandomMillsSleep() {
         long start = currentTimeMillis();
         sleep(300, 400);

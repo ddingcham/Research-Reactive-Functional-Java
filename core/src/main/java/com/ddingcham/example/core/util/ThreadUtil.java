@@ -1,9 +1,15 @@
 package com.ddingcham.example.core.util;
 
 import io.reactivex.functions.BiFunction;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.util.Random;
 
+import static com.ddingcham.example.core.util.Logger.log;
+import static java.lang.Thread.currentThread;
+
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ThreadUtil {
 
     public static final BiFunction<Integer, Integer, Integer> DEFAULT_MILLIS_CONTROL =
@@ -13,7 +19,7 @@ public class ThreadUtil {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            log(e.getMessage());
         }
     }
 
@@ -27,5 +33,9 @@ public class ThreadUtil {
         } catch (Exception e) {
             throw new IllegalArgumentException("Invalid Argument : millisControl");
         }
+    }
+
+    public static String getCurrentThreadName() {
+        return "Thread: " + currentThread().getName();
     }
 }
