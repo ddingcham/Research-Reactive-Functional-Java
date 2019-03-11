@@ -22,6 +22,6 @@ public class VideoRepositoryTest {
         repository
                 .getVideosWithErrors()
                 .doOnError(error -> log(error.getMessage()));
-         sleep(2000);
+         sleep(2500);
     }
 }
