@@ -5,7 +5,8 @@ import org.junit.Test;
 
 public class IntegrationTest {
 
-    @Test
+//    @Test
+    @Deprecated
     public void runExecutor() throws InterruptedException {
         MainExecutor mainExecutor = new MainExecutor();
 //        Scheduler main = Schedulers.from(mainExecutor);
